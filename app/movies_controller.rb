@@ -34,15 +34,15 @@ def can_be_created_in_a_block(args = __)
 end
 
 def can_get_the_first_item_in_the_database
-  Movie.all.first
+  Movie.first
 end
 
 def can_get_the_last_item_in_the_database
-  Movie.all.last
+  Movie.last
 end
 
 def can_get_size_of_the_database
-  Movie.all.size
+  Movie.count
 end
 
 def can_find_the_first_item_from_the_database_using_id
@@ -66,8 +66,8 @@ end
 def can_be_found_updated_and_saved
   # Updtate the title "Awesome Flick" to "Even Awesomer Flick", save it, then return it
   Movie.create(title: "Awesome Flick")
-  __
-  __
+  movie = Movie.find(title: "Awesome Flick")
+  movie.title = 
   __
 end
 
