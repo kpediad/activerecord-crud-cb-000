@@ -47,7 +47,7 @@ def can_get_size_of_the_database
 end
 
 def can_find_the_first_item_from_the_database_using_id
-  __
+  Movie.find(1)
 end
 
 def can_find_by_multiple_attributes
@@ -68,7 +68,7 @@ def can_be_found_updated_and_saved
   # Updtate the title "Awesome Flick" to "Even Awesomer Flick", save it, then return it
   Movie.create(title: "Awesome Flick")
   movie = Movie.find(title: "Awesome Flick")
-  movie.title = 
+  movie.title =
   __
 end
 
